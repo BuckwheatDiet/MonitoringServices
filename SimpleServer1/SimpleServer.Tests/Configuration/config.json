@@ -1,0 +1,20 @@
+﻿{
+  "slack": {
+    "apiToken": "xoxb-314269137202-F83UKTrHTe2atSrhp9gTmRVO",
+    "testUserName": "grigorymalygin",
+    "testChannel": "#test",
+    "testFile": "Configuration\\UploadTest.txt"
+  },
+  "servicesConfig": {
+    "services": [
+      {
+        "serviceName": "AOS60$01",
+        "machineName": "axdev01.mmr.ms"
+      },
+      {
+        "serviceName": "MSSQLSERVER",
+        "machineName": "axdev01.mmr.ms"
+      }
+    ]
+  }
+}
