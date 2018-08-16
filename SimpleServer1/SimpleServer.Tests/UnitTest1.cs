@@ -14,5 +14,23 @@ namespace SimpleServer.Tests
             Console.WriteLine(config.Slack.ApiToken);
 
         }
+
+        [TestMethod]
+        public void GenerateCryptedString()
+        {
+            string key = "string_to_crypt";
+            Console.WriteLine(key);
+            var result = Crypto.Encrypt(key, false);
+            Console.WriteLine(result);
+        }
+
+        [TestMethod]
+        public void GenerateBase64Key()
+        {
+            System.Security.Cryptography.TripleDESCryptoServiceProvider desc = new System.Security.Cryptography.TripleDESCryptoServiceProvider();
+            desc.GenerateKey();
+            string key = Convert.ToBase64String(desc.Key);
+            Console.WriteLine(key);
+        }
     }
 }

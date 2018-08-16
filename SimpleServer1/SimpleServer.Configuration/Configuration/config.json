@@ -1,6 +1,6 @@
 ﻿{
   "slack": {
-    "apiToken": "xoxb-314269137202-F83UKTrHTe2atSrhp9gTmRVO",
+    "apiToken": "8WQyq4hDR2q3T08dhD9GRxyGVTY22UOFf+Yp4/viZwsMsnaMbUeOh2bu90pssmU9",
     "testUserName": "grigorymalygin",
     "testChannel": "#test",
     "testFile": "Configuration\\UploadTest.txt"

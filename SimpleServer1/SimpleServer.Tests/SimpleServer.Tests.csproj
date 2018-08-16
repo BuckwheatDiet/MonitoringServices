@@ -76,7 +76,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Configuration\config.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -90,6 +92,10 @@
     <ProjectReference Include="..\SimpleServer.ServiceManager\SimpleServer.ServiceManager.csproj">
       <Project>{02c8dc7e-8d31-4c01-9247-c475ff10d430}</Project>
       <Name>SimpleServer.ServiceManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleServer.SlackConnector\SimpleServer.SlackIntegrator.csproj">
+      <Project>{b249bed0-c787-4f1a-9acd-d1a1e36eae1c}</Project>
+      <Name>SimpleServer.SlackIntegrator</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

@@ -32,6 +32,10 @@ namespace SimpleServer.Configuration
             {
                 throw new InvalidConfiguration("Slack API is missing");
             }
+            else
+            {
+                Current.Slack.ApiToken = Crypto.Decrypt(Current.Slack.ApiToken, false);
+            }
 
             return Current;
         }

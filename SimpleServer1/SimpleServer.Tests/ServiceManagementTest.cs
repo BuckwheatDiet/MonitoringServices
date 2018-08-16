@@ -21,12 +21,12 @@ namespace SimpleServer.Tests
 
             IConfig config = (new ConfigReader()).GetConfig();
 
-            var mockSlack = new Mock<ISlackIntegration>();
+            //var mockSlack = new Mock<ISlackIntegration>();
 
-            mockSlack.Setup(x => x.Output(It.IsAny<string>()))
-                .Callback<string>(txt => { Console.WriteLine(txt);});
+            //mockSlack.Setup(x => x.Output(It.IsAny<string>()))
+            //    .Callback<string>(txt => { Console.WriteLine(txt);});
 
-            var servManag = new ServiceManagement(mockLogger.Object, config, mockSlack.Object);
+            var servManag = new ServiceManagement(mockLogger.Object, config);//, mockSlack.Object);
             servManag.CheckAllServices();
 
         }

@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Crypto.cs" />
     <Compile Include="IConfig.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="ConfigReader.cs" />
